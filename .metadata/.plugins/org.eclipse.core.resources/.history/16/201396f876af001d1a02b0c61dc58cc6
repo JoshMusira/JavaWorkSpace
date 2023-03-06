@@ -1,0 +1,27 @@
+package joshua.java;
+
+import javax.swing.*;
+
+ class musira{
+
+	
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame();
+		frame.setTitle("Learning from JavatPoint.");
+		
+		JTextField field = new JTextField("Welcome here...");
+		
+		JButton button = new JButton(new ImageIcon("C:\\Users\\CMB-Ken\\OneDrive\\Pictures\\mLogo.jfif"));
+		button.setBounds(100, 200, 300, 200);
+		
+		frame.add(button);
+		frame.add(field);
+		frame.setSize(500,500);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		
+	}
+
+}

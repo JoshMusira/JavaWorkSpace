@@ -1,0 +1,17 @@
+package Tutorial1;
+import java.util.Scanner;
+
+public class Mail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner Sc = new Scanner(System.in);
+		String scanner = Sc.next();
+		
+		int x = Integer.ParseInt(Scanned);
+		
+		System.out.println(x);
+		
+			}
+
+}

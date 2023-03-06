@@ -1,0 +1,58 @@
+package form.java;
+
+import java.awt.event.*;
+import javax.swing.*;
+import java.awt.*;
+
+public class main extends JFrame implements ActionListener{
+	private JList<String> namelist;
+	private JTextField nameField;
+	private JButton addButton;
+	private DefaultListModel<String> nameListModel;
+	
+	public main() {
+		
+		setTitle("Displayed names are:");
+//		super("Name Lists Are:");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		String[] nsmes = {"josh", "Joe", "Moe" ,"Kari"};
+		
+		addButton = new JButton("Enter your name: ");
+		nameField = new JTextField(15);
+		addButton.addActionListener(this);
+		
+		nameListModel = new DefaultListModel<String>();
+		namelist = new JList<String>(nameListModel);
+		
+		JPanel panel = new JPanel();
+		panel.add(addButton);
+		panel.add(nameField);
+		add(panel, BorderLayout.NORTH);
+		add(new JScrollPane (namelist),BorderLayout.CENTER);
+		
+		
+		
+		setSize(600 ,600);
+		setVisible(true);
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == addButton) {
+			String name = nameField.getText();
+			if (!name.equals(" ")) {
+				nameListModel.addElement(name);
+				nameField.setText(" ");
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		new main();
+		
+	}
+
+}

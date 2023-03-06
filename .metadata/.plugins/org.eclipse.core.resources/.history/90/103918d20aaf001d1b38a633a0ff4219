@@ -1,0 +1,40 @@
+package form.java;
+
+import java.awt.event.*;
+import javax.swing.*;
+import java.awt.*;
+
+public class main extends JFrame implements ActionListener{
+	
+	public main() {
+		JTextField nameField;
+		JButton addButton;
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		addButton = new JButton("Enter your name: ");
+		nameField = new JTextField(15);
+		addButton.addActionListener(this);
+		
+		JPanel panel = new JPanel();
+		panel.add(addButton);
+		panel.add(nameField);
+		add(panel, BorderLayout.NORTH);
+		
+		setSize(500 ,500);
+		setVisible(true);
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		new main();
+		
+	}
+
+}

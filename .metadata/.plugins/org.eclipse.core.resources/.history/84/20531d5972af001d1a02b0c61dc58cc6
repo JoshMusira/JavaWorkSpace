@@ -1,0 +1,36 @@
+package joshua.java;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+ class musira{
+	int rollno;
+	String name;
+	
+	void insertRecord(int r, String n) {
+		rollno = r;
+		name = n;
+	}
+
+	void DisplayInformation (){
+		System.out.println( rollno +"" + name );
+	}
+	
+
+	public static void main(String[] args) {
+		musira S1 = new musira();
+		musira S2 = new musira();
+		musira S3 = new musira();
+		
+		S1.insertRecord(101,  "judy");
+		S2.insertRecord(102,  "jay");
+		S3.insertRecord(103, "josh");
+		
+		
+		S1.DisplayInformation();
+		S2.DisplayInformation();
+		S3.DisplayInformation();
+		
+	}
+
+}

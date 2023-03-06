@@ -1,0 +1,36 @@
+package question_One;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+public class questionTwo{
+		
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("Client AirLine Registration System");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel panel = new JPanel(new GridLayout(6,4,5,2));
+		
+		for (int i = 1;i <=6; i++) {
+			JLabel nameLabel = new JLabel("Name " + i +  "  :");
+			JTextField nameField = new JTextField();
+			JLabel ageLabel = new JLabel("Age " + i + ":");
+			JTextField ageField = new JTextField();
+			
+			panel.add(nameLabel);
+			panel.add(nameField);
+			panel.add(ageLabel);
+			panel.add(ageField);
+			
+			
+		}
+		frame.add(panel);
+		frame.pack();
+		frame.setSize(900,500);
+		frame.setVisible(true);
+
+	}
+		
+
+}

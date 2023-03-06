@@ -1,0 +1,32 @@
+package garbageCollection;
+
+public class garbage {
+	String josh;
+	
+	garbage ( String josh){
+		this.josh = josh;
+	}
+	
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	
+	protected void finalize() throws Throwable{
+		System.out.println( josh + "Successfully Garbage Collected!");
+		
+		super.finalize();
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		garbage g1 = new garbage("g1");
+		
+		g1 = null;
+		
+		System.gc();
+		
+		
+
+	}
+
+}

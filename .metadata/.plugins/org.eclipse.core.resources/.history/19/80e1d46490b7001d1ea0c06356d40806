@@ -1,0 +1,19 @@
+package tryFunction;
+
+public class exception {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			String name = "Judy";
+			
+			System.out.println(name.charAt(0));
+		}
+		catch(NullPointerException e) {
+			System.out.println("Name varibale is null");
+		}
+		
+
+	}
+
+}

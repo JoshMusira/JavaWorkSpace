@@ -1,0 +1,28 @@
+package garbageCollection;
+
+public class garbage {
+	String josh;
+	
+	garbage ( String josh){
+		this.josh = josh;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		garbage g1 = new garbage("g1");
+		
+		
+		System.gc();
+		
+		g1 = null;
+		
+		Runtime.getRuntime().gc();
+		
+//		@Override;
+//		
+//		protected void finalized() throws Throwable{
+//			System.out.println( this.josh + "Successfully Garbage Collected!");
+//		}
+
+	}
+
+}

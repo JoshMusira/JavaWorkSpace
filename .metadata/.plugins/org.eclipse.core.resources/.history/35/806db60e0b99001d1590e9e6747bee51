@@ -1,0 +1,22 @@
+package Tutorial1;
+import java.util.Scanner;
+
+public class Mail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner Sc = new Scanner(System.in);
+		String scanned = Sc.nextLine();
+		
+		
+		
+		
+		if(scanned.equals("kenya")) {
+			System.out.println("You love your country!");
+		}
+		else {
+			System.out.println("Love your country!");
+		}
+			}
+
+}

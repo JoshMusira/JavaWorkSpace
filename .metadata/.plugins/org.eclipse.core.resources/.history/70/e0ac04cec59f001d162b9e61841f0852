@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package user_login;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import java.awt.Color;
+
+/**
+ * @author CMB-Ken
+ *
+ */
+public class brocode {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		JFrame  frame = new JFrame();
+		frame.setTitle("Learning from Bro Code.");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(550,420);
+		frame.setVisible(true);
+		
+		ImageIcon image = new ImageIcon("image.JPEG");
+		frame.setIconImage(image.getImage());
+		frame.getContentPane().setBackground(Color.gray);
+		
+
+	}
+
+}

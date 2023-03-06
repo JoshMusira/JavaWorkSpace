@@ -1,0 +1,112 @@
+package question_One;
+
+import javax.swing.*;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("Client AirLine Registration System");
+		
+		
+		JLabel lb1,lb2,lb3,lb4,lb5,lb6,lb7,lb8,lb9,lb10,lb11,lb12,lb13 = null;
+		lb1 = new JLabel("Client-ID:");
+		lb2 = new JLabel("FullName:");
+		lb3 = new JLabel("D.O.B:");
+		lb4 = new JLabel("Address:");
+		lb5 = new JLabel("TellNo:");
+		lb6 = new JLabel("Destination:");
+		lb7 = new JLabel("Flight-ID:");
+		lb8 = new JLabel("FlightName:");
+		lb9 = new JLabel("Departure:");
+		lb10 = new JLabel("Arrival:");
+		lb11 = new JLabel("SeatNo:");
+		lb12 = new JLabel("Charges:");
+		lb13 = new JLabel();
+		
+		
+		lb1.setBounds(50,80,200,20);
+		lb2.setBounds(50,110,200,20);
+		lb3.setBounds(50,140,200,20);
+		lb4.setBounds(50,170,200,20);
+		lb5.setBounds(50,200,200,20);
+		lb6.setBounds(50,230,200,20);
+		lb7.setBounds(400,80,200,20);
+		lb8.setBounds(400,110,200,20);
+		lb9.setBounds(400,140,200,20);
+		lb10.setBounds(400,170,200,20);
+		lb11.setBounds(400,200,200,20);
+		lb12.setBounds(400,230,200,20);
+		lb13.setBounds(400,260,200,20);
+		
+		JButton btnsave,btnnew,btnupdate,btnCanceal;
+		btnsave = new JButton("Save");
+		btnnew = new JButton("New");
+		btnupdate = new JButton("Update");
+		btnCanceal = new JButton("Canceal");
+		
+		btnsave.setBounds(75,280,70,30);
+		
+		
+		JTextField input1,input2,input3,input4,input5,input6,input7,input8,input9,input10,input11,input12;
+		input1 = new JTextField();
+		input2 = new JTextField();
+		input3 = new JTextField();
+		input4 = new JTextField();
+		input5 = new JTextField();
+		input6 = new JTextField();
+		input7 = new JTextField();
+		input8 = new JTextField();
+		input9 = new JTextField();
+		input10 = new JTextField();
+		input11 = new JTextField();
+		input12 = new JTextField();
+		
+		input1.setBounds(150,80,200,20);
+		input2.setBounds(150,110,200,20);
+		input3.setBounds(150,140,200,20);
+		input4.setBounds(150,170,200,20);
+		input5.setBounds(150,200,200,20);
+		input6.setBounds(150,230,200,20);
+		input7.setBounds(500,80,200,20);
+		input8.setBounds(500,110,200,20);
+		input9.setBounds(500,140,200,20);
+		input10.setBounds(500,170,200,20);
+		input11.setBounds(500,200,200,20);
+		input12.setBounds(500,230,200,20);
+		
+		frame.add(btnsave);
+		frame.add(input1);
+		frame.add(input2);
+		frame.add(input3);
+		frame.add(input4);
+		frame.add(input5);
+		frame.add(input6);
+		frame.add(input7);
+		frame.add(input8);
+		frame.add(input9);
+		frame.add(input10);
+		frame.add(input11);
+		frame.add(input12);
+		frame.add(lb1);
+		frame.add(lb2);
+		frame.add(lb3);
+		frame.add(lb4);
+		frame.add(lb5);
+		frame.add(lb6);
+		frame.add(lb7);
+		frame.add(lb8);
+		frame.add(lb9);
+		frame.add(lb10);
+		frame.add(lb11);
+		frame.add(lb12);
+		frame.add(lb13);
+		frame.setSize(850,650);
+		frame.setLocationRelativeTo(null);
+//		frame.pack();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+
+	}
+
+}

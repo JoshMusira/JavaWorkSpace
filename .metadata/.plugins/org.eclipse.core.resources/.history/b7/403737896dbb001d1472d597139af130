@@ -1,0 +1,60 @@
+package question_One;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+public class questionTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("Client AirLine Registration System");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel panel = new JPanel(new GridLayout(6, 4,50,30));
+			
+			JLabel lb1,lb2,lb3,lb4,lb5,lb6,lb7,lb8,lb9,lb10,lb11,lb12;
+			lb1 = new JLabel("Client-ID:");
+			lb2 = new JLabel("FullName:");
+			lb3 = new JLabel("D.O.B:");
+			lb4 = new JLabel("Address:");
+			lb5 = new JLabel("TellNo:");
+			lb6 = new JLabel("Destination:");
+			lb7 = new JLabel("Flight-ID:");
+			lb8 = new JLabel("FlightName:");
+			lb9 = new JLabel("Departure:");
+			lb10 = new JLabel("Arrival:");
+			lb11 = new JLabel("SeatNo:");
+			lb12 = new JLabel("Charges:");
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			frame.add(lb1);
+			frame.add(lb2);
+			frame.add(lb3);
+			frame.add(lb4);
+			frame.add(lb5);
+			frame.add(lb6);
+			frame.add(lb7);
+			frame.add(lb8);
+			frame.add(lb9);
+			frame.add(lb10);
+			frame.add(lb11);
+			frame.add(lb12);
+			frame.add(panel);
+			frame.pack();
+			frame.setSize(1000,650);
+			frame.setVisible(true);
+
+		
+		
+
+	}
+
+}

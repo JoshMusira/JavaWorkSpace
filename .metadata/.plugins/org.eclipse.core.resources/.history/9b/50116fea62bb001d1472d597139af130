@@ -1,0 +1,32 @@
+package question_One;
+
+import javax.swing.*;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("Client AirLine Registration System");
+		
+		
+		JLabel lb1,lb2,lb3,lb4,lb5,lb6;
+		lb1 = new JLabel("Client-ID:");
+		lb2 = new JLabel("FullName:");
+		lb3 = new JLabel("D.O.B:");
+		lb4 = new JLabel("Address:");
+		lb5 = new JLabel("TellNo:");
+		lb6 = new JLabel("Destination:");
+		
+		
+		
+		
+		
+		
+		frame.setSize(1000,700);
+		frame.setLocationRelativeTo(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package Tutorial1;
+import java.util.Scanner;
+
+public class Mail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Name your best country in 2023: ");
+		Scanner Sc = new Scanner(System.in);
+		String scanned = Sc.next();
+		
+		
+		
+		
+		if(scanned.equals("kenya")) {
+			System.out.println("You love your country!");
+		}
+		else {
+			System.out.println("Love your country!");
+		}
+			}
+
+}
